@@ -74,11 +74,16 @@ WSGI_APPLICATION = "advancedfire.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'advanced_fire',
+        'USER': 'fire',
+        'PASSWORD': 'django1234',
+        'HOST': 'localhost',  # Use 'localhost' or the IP address of your MySQL server
+        'PORT': '3306',           # Leave it empty for the default MySQL port (3306)
     }
 }
+
 
 
 # Password validation
