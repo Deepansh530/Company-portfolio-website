@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 mysql-client = "*"
 mysqlclient = "*"
+django-tinymce = "*"
+pillow = "*"
 
 [dev-packages]
 
